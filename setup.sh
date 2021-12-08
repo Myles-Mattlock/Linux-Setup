@@ -8,7 +8,7 @@
 sudo apt update
 
 # Add base packages
-sudo apt install unzip picom neofetch git htop pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome libqt5svg5 qml-module-qtquick-controls
+sudo apt install unzip gwenview okular ark picom neofetch git htop vlc rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome libqt5svg5 qml-module-qtquick-controls
 
 # Download Nordic Theme
 cd /usr/share/themes/
