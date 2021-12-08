@@ -8,6 +8,7 @@ This requires you to have
 
 _Run as sudo_
 ```
-sudo 
-./setup.sh
+git clone https://github.com/Myles-Mattlock/Linux-Setup
+cd Linux-Setup/
+sudo ./setup.sh
 ```
