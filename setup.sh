@@ -7,8 +7,10 @@ cp sources.list /etc/apt/sources.list
 # Update packages list
 sudo apt update
 
+# Remove obslete packages
+sudo apt remove xsane* xfburn* exfalso* -y
 # Add base packages
-sudo apt install unzip gwenview okular ark picom neofetch git htop vlc rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome libqt5svg5 qml-module-qtquick-controls
+sudo apt install unzip okular picom neofetch git htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome -y
 
 # Download Nordic Theme
 cd /usr/share/themes/
@@ -25,7 +27,7 @@ unzip Meslo.zip -d ~/.fonts
 fc-cache -vf
 
 #Ms-fonts
-sudo apt install ttf-mscorefonts-installer
+sudo apt install ttf-mscorefonts-installer -y
 
 # Layan Cursors
 cd "$HOME/build"
