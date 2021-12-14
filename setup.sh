@@ -8,14 +8,15 @@ cp sources.list /etc/apt/sources.list
 sudo apt update
 
 # Remove obslete packages
-sudo apt remove xsane* xfburn* exfalso* -y
+sudo apt remove xsane* xterm* xfburn* exfalso* -y
 
-sudo apt autoremove
+sudo apt autoremove -y
 
 # Add base packages
-sudo apt install clipman unzip okular neofetch git htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome -y
+sudo apt install file-roller clipman unzip evince neofetch git htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome -y
 
 # Setting up the dpkg
+sudo dpkg-reconfigure libdvd-pkg
 
 # Download Nordic Theme
 cd /usr/share/themes/
