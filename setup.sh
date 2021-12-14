@@ -8,9 +8,9 @@ cp sources.list /etc/apt/sources.list
 sudo apt update
 
 # Remove obslete packages
-sudo apt remove xarchiver* xsane* xterm* xfburn* exfalso* -y
+sudo apt remove parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
-sudo apt purge xarchiver* xsane* xterm* xfburn* exfalso* -y
+sudo apt purge parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
 sudo apt autoremove -y
 
