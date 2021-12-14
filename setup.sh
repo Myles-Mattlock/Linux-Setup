@@ -9,8 +9,13 @@ sudo apt update
 
 # Remove obslete packages
 sudo apt remove xsane* xfburn* exfalso* -y
+
+sudo apt autoremove
+
 # Add base packages
-sudo apt install unzip okular picom neofetch git htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome -y
+sudo apt install clipman unzip okular neofetch git htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome -y
+
+# Setting up the dpkg
 
 # Download Nordic Theme
 cd /usr/share/themes/
