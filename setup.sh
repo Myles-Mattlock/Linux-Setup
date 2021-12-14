@@ -22,6 +22,10 @@ sudo apt install file-roller clipman unzip evince neofetch plank htop vlc libdvd
 # Setting up the dpkg
 sudo dpkg-reconfigure libdvd-pkg
 
+#Addition packages to install
+cd Packages/
+sudo gdebi *.deb
+
 # Download Nordic Theme
 cd /usr/share/themes/
 git clone https://github.com/EliverLara/Nordic.git
@@ -44,7 +48,3 @@ cd "$HOME/build"
 git clone https://github.com/vinceliuice/Layan-cursors
 cd Layan-cursors
 sudo ./install.sh
-
-#Addition packages to install
-cd Packages/
-sudo gdebi *.deb
