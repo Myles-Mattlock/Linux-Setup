@@ -24,7 +24,7 @@ sudo dpkg-reconfigure libdvd-pkg
 
 #Addition packages to install
 cd Packages/
-sudo gdebi *.deb
+sudo gdebi *.deb -y
 
 # Download Nordic Theme
 cd /usr/share/themes/
