@@ -4,17 +4,17 @@
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list 
 
-# Update packages list
-sudo apt update
-
-sudo apt upgrade -y
-
 # Remove obslete packages
 sudo apt remove atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
 sudo apt purge atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
 sudo apt autoremove -y
+
+# Update packages list
+sudo apt update
+
+sudo apt upgrade -y
 
 # Add base packages
 sudo apt install file-roller clipman unzip evince neofetch git htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome -y
