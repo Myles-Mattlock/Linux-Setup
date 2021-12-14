@@ -10,9 +10,9 @@ sudo apt update
 sudo apt upgrade -y
 
 # Remove obslete packages
-sudo apt remove parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
+sudo apt remove atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
-sudo apt purge parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
+sudo apt purge atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
 sudo apt autoremove -y
 
