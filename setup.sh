@@ -7,6 +7,8 @@ cp sources.list /etc/apt/sources.list
 # Update packages list
 sudo apt update
 
+sudo apt upgrade -y
+
 # Remove obslete packages
 sudo apt remove parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
