@@ -3,7 +3,7 @@
 # Change Debian to SID Branch
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list 
-
+cp plank.desktop /etc/xdg/autostart
 # Remove obslete packages
 sudo apt remove atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
@@ -17,7 +17,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # Add base packages
-sudo apt install file-roller clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome gdebi -y
+sudo apt install file-roller clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gdebi -y
 
 # Setting up the dpkg
 sudo dpkg-reconfigure libdvd-pkg
@@ -51,3 +51,8 @@ cd "$HOME/build"
 git clone https://github.com/vinceliuice/Layan-cursors
 cd Layan-cursors
 sudo ./install.sh
+
+Finish off with a reboot
+echo ("System will reboot in 10 seconds")
+sleep 10
+sudo reboot
