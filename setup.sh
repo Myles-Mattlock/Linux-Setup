@@ -44,7 +44,7 @@ unzip Meslo.zip -d ~/.fonts
 fc-cache -vf
 
 #Ms-fonts
-sudo apt install ttf-mscorefonts-installer -y
+sudo apt install ttf-mscorefonts-installer -yq
 
 # Layan Cursors
 cd "$HOME/build"
