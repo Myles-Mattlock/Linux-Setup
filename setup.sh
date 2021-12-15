@@ -17,10 +17,10 @@ sudo apt update
 sudo apt upgrade -y
 
 # Add base packages
-sudo apt install file-roller clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gdebi -y
+sudo apt install file-roller clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gdebi -yq
 
 # Setting up the dpkg
-sudo dpkg-reconfigure libdvd-pkg
+sudo dpkg-reconfigure libdvd-pkg -n
 
 #Addition packages to install
 cd Packages/
