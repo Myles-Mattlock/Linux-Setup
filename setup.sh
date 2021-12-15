@@ -24,7 +24,7 @@ sudo dpkg-reconfigure libdvd-pkg
 
 #Addition packages to install
 cd Packages/
-sudo gdebi *.deb -y
+sudo gdebi code.deb GitHubDesktop-linux.deb google-chrome-stable_current.deb teams.deb -n
 
 # Download Nordic Theme
 cd /usr/share/themes/
