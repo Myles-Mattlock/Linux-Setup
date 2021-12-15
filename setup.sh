@@ -4,7 +4,7 @@
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list 
 cp plank.desktop /etc/xdg/autostart
-cp themes ~/.local/plank
+cp -r themes ~/.local/plank
 sudo cp sudoers /etc/
 # Remove obslete packages
 sudo apt remove atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
