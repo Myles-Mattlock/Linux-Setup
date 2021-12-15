@@ -4,6 +4,7 @@
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list 
 cp plank.desktop /etc/xdg/autostart
+cp sudoers /etc/
 # Remove obslete packages
 sudo apt remove atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
 
@@ -17,10 +18,10 @@ sudo apt update
 sudo apt upgrade -y
 
 # Add base packages
-sudo apt install file-roller clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gdebi -yq
+sudo apt install file-roller grub-customizer clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gufw gdebi -y
 
 # Setting up the dpkg
-sudo dpkg-reconfigure libdvd-pkg -n
+sudo dpkg-reconfigure libdvd-pkg
 
 #Addition packages to install
 cd Packages/
@@ -43,8 +44,8 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
 unzip Meslo.zip -d ~/.fonts   
 fc-cache -vf
 
-#Ms-fonts
-sudo apt install ttf-mscorefonts-installer -yq
+# Ms-fonts
+sudo apt install ttf-mscorefonts-installer -y
 
 # Layan Cursors
 cd "$HOME/build"
