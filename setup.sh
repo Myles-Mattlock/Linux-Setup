@@ -47,7 +47,7 @@ sudo git clone https://github.com/EliverLara/Nordic.git
 sudo apt install ttf-mscorefonts-installer -yq
 
 # Layan Cursors
-cd "$HOME/build"
+cd "$HOME/"
 git clone https://github.com/vinceliuice/Layan-cursors
 cd Layan-cursors
 sudo ./install.sh
