@@ -52,7 +52,7 @@ git clone https://github.com/vinceliuice/Layan-cursors
 cd Layan-cursors
 sudo ./install.sh
 
-Finish off with a reboot
+#Finish off with a reboot
 echo "System will reboot in 10 seconds"
 sleep 10
 sudo reboot
