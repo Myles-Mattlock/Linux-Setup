@@ -34,15 +34,13 @@ sudo gdebi teams.deb -n
 # Make Theme folders
 mkdir -p ~/.themes ~/.fonts
 
-# Fira Code Nerd Font variant needed
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-unzip FiraCode.zip -d ~/.fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
-unzip Meslo.zip -d ~/.fonts   
+# `ubuntu nerd font
+cd ..
+unzip UbuntuMono.zip -d ~/.fonts
 fc-cache -vf
 
-# Download Nordic Theme
-cd /usr/share/themes/
+`# Download Nordic Theme
+cd /`usr/share/themes/
 sudo git clone https://github.com/EliverLara/Nordic.git
 
 # Ms-fonts
