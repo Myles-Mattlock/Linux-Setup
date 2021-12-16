@@ -39,8 +39,8 @@ cd ..
 unzip UbuntuMono.zip -d ~/.fonts
 fc-cache -vf
 
-`# Download Nordic Theme
-cd /`usr/share/themes/
+# Download Nordic Theme
+cd /usr/share/themes/
 sudo git clone https://github.com/EliverLara/Nordic.git
 
 # Ms-fonts
