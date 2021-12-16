@@ -1,14 +1,15 @@
-# Linux-Setup
+# Debian-Setup
 Debian customizations from Myles Mattlock
  
 ## Requirements
-This requires you to have 
+Debian bullseye (debian 11)
+xfce4
 
 ### Base Stuff - Root
 
-_Run as sudo_
+_Run as shown below_
 ```
 git clone https://github.com/Myles-Mattlock/Linux-Setup
 cd Linux-Setup/
-sudo ./setup.sh
+./setup.sh
 ```

@@ -7,19 +7,19 @@ sudo cp plank.desktop /etc/xdg/autostart
 sudo cp -r themes ~/.local/share/plank/
 sudo cp sudoers /etc/
 # Remove obslete packages
-sudo apt remove atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
+sudo apt remove atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -yq
 
-sudo apt purge atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -y
+sudo apt purge atril* parole* xarchiver* xsane* xterm* xfburn* exfalso* -yq
 
-sudo apt autoremove -y
+sudo apt autoremove -yq
 
 # Update packages list
 sudo apt update
 
-sudo apt upgrade -y
+sudo apt upgrade -yq
 
 # Add base packages
-sudo apt install file-roller grub-customizer clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gufw gdebi -y
+sudo apt install file-roller grub-customizer clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gufw gdebi -yq
 
 # Setting up the dpkg
 sudo dpkg-reconfigure libdvd-pkg
@@ -46,7 +46,7 @@ unzip Meslo.zip -d ~/.fonts
 fc-cache -vf
 
 # Ms-fonts
-sudo apt install ttf-mscorefonts-installer -y
+sudo apt install ttf-mscorefonts-installer -yq
 
 # Layan Cursors
 cd "$HOME/build"
