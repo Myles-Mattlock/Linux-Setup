@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Change Debian to SID Branch
+# Copying and moving files to the right locations
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp sources.list /etc/apt/sources.list 
 sudo cp plank.desktop /etc/xdg/autostart
@@ -19,7 +19,7 @@ sudo apt update
 sudo apt upgrade -yq
 
 # Add base packages
-sudo apt install file-roller grub-customizer clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gufw gdebi -yq
+sudo apt install file-roller grub-customizer clipman unzip evince neofetch plank htop vlc libdvd-pkg rhythmbox kodi pulseeffects pavucontrol nemo papirus-icon-theme fonts-noto-color-emoji fonts-firacode fonts-font-awesome micro gufw gdebi xfce4-clipman-plugin -yq
 
 # Setting up the dpkg
 sudo dpkg-reconfigure libdvd-pkg
@@ -31,10 +31,6 @@ sudo gdebi GitHubDesktop-linux.deb -n
 sudo gdebi google-chrome-stable_current.deb -n
 sudo gdebi teams.deb -n
 
-# Download Nordic Theme
-cd /usr/share/themes/
-sudo git clone https://github.com/EliverLara/Nordic.git
-
 # Make Theme folders
 mkdir -p ~/.themes ~/.fonts
 
@@ -44,6 +40,10 @@ unzip FiraCode.zip -d ~/.fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
 unzip Meslo.zip -d ~/.fonts   
 fc-cache -vf
+
+# Download Nordic Theme
+cd /usr/share/themes/
+sudo git clone https://github.com/EliverLara/Nordic.git
 
 # Ms-fonts
 sudo apt install ttf-mscorefonts-installer -yq
