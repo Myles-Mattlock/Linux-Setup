@@ -32,7 +32,7 @@ sudo gdebi google-chrome-stable_current.deb -n
 sudo gdebi teams.deb -n
 
 # Download Nordic Theme
-sudo cd /usr/share/themes/
+cd /usr/share/themes/
 sudo git clone https://github.com/EliverLara/Nordic.git
 
 # Make Theme folders
